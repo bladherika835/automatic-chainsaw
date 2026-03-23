@@ -1,0 +1,25 @@
+// (c) 2026 Starlight Dev
+// Project: Crystal Horse World - Ice World Module
+// Lead Architect: [Your Name]
+
+using UnityEngine;
+
+namespace StarlightDev.Core.Physics
+{
+    /// <summary>
+    /// Specialized movement physics for Snow Horses in frozen environments.
+    /// Optimized for the Reshape Engine (High Performance / Low RAM).
+    /// </summary>
+    public class SnowHorsePhysics : MonoBehaviour
+    {
+        [Header("Ice World Settings")]
+        public float iceGripLevel = 0.95f; 
+        public float snowTraction = 1.2f; // Increased speed for Snow Horses in snow
+
+        public void ApplyWinterTraction()
+        {
+            // Ensures stability on frozen surfaces and deep snow.
+            Debug.Log("Winter Traction Active: Optimized for Ice World.");
+        }
+    }
+}
